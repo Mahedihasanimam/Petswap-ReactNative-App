@@ -18,10 +18,15 @@ const App = () => {
         <Navbar />
 
         {/* search bar */}
-        <View style={tw`flex flex-row items-center w-full h-[50px] bg-[#E6ECEC4D] rounded-full p-[10px] `}>
+        <View style={tw`flex flex-row items-center w-full h-[50px] bg-[#E6ECEC4D] rounded-full px-4`}>
           <SvgXml xml={search} />
-          <TextInput style={tw`text-gray-600 text-xs p-2 font-semibold rounded-full flex-1  `} placeholder='Search' />
+          <TextInput
+            style={tw`text-gray-600 text-xs font-semibold flex-1 ml-2`}
+            placeholder='Search'
+            placeholderTextColor="#9CA3AF"  // Optional: Placeholder color for better visibility
+          />
         </View>
+
 
         {/* banner section ----- */}
         <Banner />

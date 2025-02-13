@@ -6,10 +6,10 @@ import { hurtIcon, verified } from '../assets/icons/Icons'
 
 const ProductCard = () => {
     return (
-        <View style={tw`bg-[#E6ECEC4D] w-[175px] rounded-[10px] p-[10px] cursor-pointer `}>
+        <View style={tw`bg-[#E6ECEC4D] w-full rounded-[10px] p-[10px] cursor-pointer `}>
 
 
-            <Image style={tw` bg-[#82A0A21A]  rounded-lg  `} source={require('../assets/images/product.png')} />
+            <Image style={tw` bg-[#82A0A21A]  rounded-lg flex-1 w-full  `} source={require('../assets/images/product.png')} />
 
             <View style={tw`flex flex-row justify-between items-center mt-2`}>
                 <Text style={tw`text-[#000000] text-[14px] font-[700] font-semibold`}>

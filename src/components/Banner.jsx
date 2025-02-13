@@ -22,7 +22,7 @@ const Banner = () => {
                                 <Text style={tw`text-[#272727] text-[12px] font-[700] font-bold `}>
                                     Shop Now
                                 </Text>
-                            </TouchableOpacity>
+                            </TouchableOpacity>              
                         </View>
                     </View>
                 </View>

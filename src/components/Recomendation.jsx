@@ -17,14 +17,15 @@ const Recomendation = () => {
                 </Text>
             </View>
 
-            <View style={tw`flex flex-row flex-wrap justify-around gap-6`}>
-                {
-                    Array.from({ length }).map((_, index) => (
-                        <ProductCard key={index} />
-                    ))
-                }
-
+            <View style={tw`flex flex-row flex-wrap justify-between`}>
+                {Array.from({ length: 20 }).map((_, index) => (
+                    <View key={index} style={tw`w-[48%] mb-6`}>
+                        <ProductCard />
+                    </View>
+                ))}
             </View>
+
+
         </View>
     )
 }

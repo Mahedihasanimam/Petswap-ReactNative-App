@@ -14,6 +14,11 @@ export const hamburger = `<svg width="28" height="28" viewBox="0 0 24 24" fill="
 <path d="M3 18V16H21V18H3ZM3 13V11H21V13H3ZM3 8V6H21V8H3Z" fill="black"/>
 </svg>
 `;
+export const closeIcon = `<svg width="9" height="15" viewBox="0 0 9 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M2.64651 7.50001L8.24438 13.0979L7.12497 14.2173L0.967385 8.05971C0.81897 7.91126 0.735596 7.70993 0.735596 7.50001C0.735596 7.29008 0.81897 7.08876 0.967385 6.9403L7.12497 0.782715L8.24438 1.90213L2.64651 7.50001Z" fill="#272727"/>
+</svg>
+
+`;
 
 
 export const search = `<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
