@@ -3,6 +3,7 @@ import React, { useState, useRef, useEffect } from 'react'
 import tw from '../lib/tailwind'
 import { SvgXml } from 'react-native-svg'
 import { hamburger, closeIcon } from '../assets/icons/Icons'
+import { useNavigation } from '@react-navigation/native'
 
 const menuItems = [
     { id: 1, name: 'My orders' },
@@ -19,7 +20,7 @@ const Navbar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [isEnabled, setIsEnabled] = useState(false); // For Vacation Mode Switch
     const slideAnim = useRef(new Animated.Value(-250)).current; // Initial Position Off-Screen
-
+const Navigation = useNavigation();
     const toggleMenu = () => {
         setIsMenuOpen(!isMenuOpen);
     }
@@ -47,9 +48,12 @@ const Navbar = () => {
                         <Text style={tw`text-[#A8A8A8] text-[12px] font-[500] font-semibold`}>Los Angles, USA</Text>
                     </View>
                 </View>
-                <View style={tw`flex flex-row items-center gap-2`}>
+                <TouchableOpacity onPress={()=>Navigation.navigate('profile')}>
+
+                <View  style={tw`flex flex-row items-center gap-2`}>
                     <Image source={require('../assets/images/Cat-drees.png')} style={tw`h-[34px] w-[34px] rounded-full bg-gray-400 mx-auto`} />
                 </View>
+                </TouchableOpacity>
             </View>
 
             {/* BACKDROP OVERLAY */}

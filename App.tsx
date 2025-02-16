@@ -12,11 +12,11 @@ import Footer from './src/components/Footer'
 const App = () => {
   return (
 
-    <View style={tw`h-screen bg-[#FAFFFF] p-2`}>
+    <View style={tw`h-screen bg-[#FAFFFF] `}>
       <ScrollView showsVerticalScrollIndicator={false}>
 
         <Navbar />
-
+        
         {/* search bar */}
         <View style={tw`flex flex-row items-center w-full h-[50px] bg-[#E6ECEC4D] rounded-full px-4`}>
           <SvgXml xml={search} />
@@ -32,9 +32,9 @@ const App = () => {
         <Banner />
 
         {/* Recomendation section ---------- */}
-        <Recomendation />
+        <Recomendation /> 
 
-        <Footer />
+
       </ScrollView>
 
     </View>
